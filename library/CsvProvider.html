@@ -5,7 +5,7 @@
     <title>F# Data: CSV Type Provider
 </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The F# Data library implements type providers for working with structured file formats (CSV, JSON and XML) and for accessing the WorldBank and Freebase services. It also includes helpers for other data-related tasks.">
+    <meta name="description" content="The F# Data library implements type providers for working with structured file formats (CSV, HTML, JSON and XML) and for accessing the WorldBank and Freebase services. It also includes helpers for parsing CSV, HTML and JSON files, and for sending HTTP requests.">
     <meta name="author" content="Tomas Petricek; Gustavo Guerra">
 
     <script src="https://code.jquery.com/jquery-1.8.0.js"></script>
@@ -151,7 +151,7 @@ of MSFT stocks changes since the company was founded:</p>
 </td>
 <td class="snippet"><pre class="fssnip">
 <span class="c">// Load the FSharp.Charting library</span>
-<span class="prep">#load</span> <span class="s">&quot;</span><span class="s">.</span><span class="s">.</span><span class="s">/</span><span class="s">.</span><span class="s">.</span><span class="s">/</span><span class="s">.</span><span class="s">.</span><span class="s">/</span><span class="s">packages</span><span class="s">/</span><span class="s">FSharp</span><span class="s">.</span><span class="s">Charting</span><span class="s">.</span><span class="s">0</span><span class="s">.</span><span class="s">90</span><span class="s">.</span><span class="s">6</span><span class="s">/</span><span class="s">FSharp</span><span class="s">.</span><span class="s">Charting</span><span class="s">.</span><span class="s">fsx</span><span class="s">&quot;</span>
+<span class="prep">#load</span> <span class="s">&quot;</span><span class="s">.</span><span class="s">.</span><span class="s">/</span><span class="s">.</span><span class="s">.</span><span class="s">/</span><span class="s">.</span><span class="s">.</span><span class="s">/</span><span class="s">packages</span><span class="s">/</span><span class="s">FSharp</span><span class="s">.</span><span class="s">Charting</span><span class="s">/</span><span class="s">FSharp</span><span class="s">.</span><span class="s">Charting</span><span class="s">.</span><span class="s">fsx</span><span class="s">&quot;</span>
 <span class="k">open</span> <span onmouseout="hideTip(event, 'fs20', 31)" onmouseover="showTip(event, 'fs20', 31)" class="i">System</span>
 <span class="k">open</span> <span onmouseout="hideTip(event, 'fs1', 32)" onmouseover="showTip(event, 'fs1', 32)" class="i">FSharp</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs21', 33)" onmouseover="showTip(event, 'fs21', 33)" class="i">Charting</span></pre>
 </td>
@@ -558,7 +558,7 @@ transformed the dataset to be smaller:</p>
 
 <ul>
 <li><a href="JsonProvider.html#jsonlib">Using JSON provider in a library</a> also applies to CSV type provider</li>
-<li><a href="CsvFile.html">F# Data: CSV Parser and Reader</a> - provides more information about 
+<li><a href="CsvFile.html">F# Data: CSV Parser</a> - provides more information about 
 working with CSV documents dynamically.</li>
 <li><a href="../reference/fsharp-data-csvprovider.html">API Reference: CsvProvider type provider</a></li>
 </ul>
@@ -665,16 +665,18 @@ working with CSV documents dynamically.</li>
 
             <li class="divider"></li>
 
+            <li><a href="/FSharp.Data/library/CsvProvider.html">CSV Type Provider</a></li>
+            <li><a href="/FSharp.Data/library/HtmlProvider.html">HTML Type Provider</a></li>
             <li><a href="/FSharp.Data/library/JsonProvider.html">JSON Type Provider</a></li>
             <li><a href="/FSharp.Data/library/XmlProvider.html">XML Type Provider</a></li>
-            <li><a href="/FSharp.Data/library/CsvProvider.html">CSV Type Provider</a></li>
             <li><a href="/FSharp.Data/library/WorldBank.html">WorldBank Provider</a></li>
             <li><a href="/FSharp.Data/library/Freebase.html">Freebase Provider</a></li>
 
             <li class="divider"></li>
 
-            <li><a href="/FSharp.Data/library/JsonValue.html">JSON Parser and Reader</a></li>
-            <li><a href="/FSharp.Data/library/CsvFile.html">CSV Parser and Reader</a></li>
+            <li><a href="/FSharp.Data/library/CsvFile.html">CSV Parser</a></li>
+            <li><a href="/FSharp.Data/library/HtmlParser.html">HTML Parser</a></li>
+            <li><a href="/FSharp.Data/library/JsonValue.html">JSON Parser</a></li>
             <li><a href="/FSharp.Data/library/Http.html">HTTP Utilities</a></li>
 
             <li class="nav-header">Tutorials</li>

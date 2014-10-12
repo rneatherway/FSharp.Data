@@ -5,7 +5,7 @@
     <title>F# Data: XML 型プロバイダー
 </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The F# Data library implements type providers for working with structured file formats (CSV, JSON and XML) and for accessing the WorldBank and Freebase services. It also includes helpers for other data-related tasks.">
+    <meta name="description" content="The F# Data library implements type providers for working with structured file formats (CSV, HTML, JSON and XML) and for accessing the WorldBank and Freebase services. It also includes helpers for parsing CSV, HTML and JSON files, and for sending HTTP requests.">
     <meta name="author" content="Tomas Petricek; Gustavo Guerra">
 
     <script src="https://code.jquery.com/jquery-1.8.0.js"></script>
@@ -443,7 +443,7 @@ staticメソッド <code>GetSample</code> を使用します：</p>
 <div class="tip" id="fs30">property XmlProvider&lt;...&gt;.Author.Born: Option&lt;int&gt;</div>
 <div class="tip" id="fs31">module Option<br /><br />from Microsoft.FSharp.Core</div>
 <div class="tip" id="fs32">val iter : action:(&#39;T -&gt; unit) -&gt; option:&#39;T option -&gt; unit<br /><br />Full name: Microsoft.FSharp.Core.Option.iter</div>
-<div class="tip" id="fs33">type Html = XmlProvider&lt;...&gt;<br /><br />Full name: XmlProvider.Html</div>
+<div class="tip" id="fs33">Multiple items<br />type Html = XmlProvider&lt;...&gt;<br /><br />Full name: XmlProvider.Html<br /><br />--------------------<br />type HtmlAttribute = | HtmlAttribute of name: string * value: string<br /><br />Full name: FSharp.Data.HtmlAttribute</div>
 <div class="tip" id="fs34">val html : XmlProvider&lt;...&gt;.Div<br /><br />Full name: XmlProvider.html</div>
 <div class="tip" id="fs35">XmlProvider&lt;...&gt;.GetSample() : XmlProvider&lt;...&gt;.Div</div>
 <div class="tip" id="fs36">val printDiv : div:XmlProvider&lt;...&gt;.Div -&gt; unit<br /><br />Full name: XmlProvider.printDiv<br /><em><br /><br />&#160;&lt;div&gt; 要素のコンテンツを表示します</em></div>
