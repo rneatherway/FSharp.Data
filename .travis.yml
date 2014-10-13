@@ -3,8 +3,8 @@ language: objective-c
 env:
   global:
     - FREEBASE_API_KEY=AIzaSyBTcOKmU7L7gFB4AdyAz75JRmdHixdLYjY
-    - MONO_VERSION=3.8.0
-    - MONO_PATCH=.7
+    - MONO_VERSION=3.10.0
+    - MONO_PATCH=.20
 
 install:
   - wget "http://download.mono-project.com/archive/${MONO_VERSION}/macos-10-x86/MonoFramework-MDK-${MONO_VERSION}${MONO_PATCH}.macos10.xamarin.x86.pkg"
