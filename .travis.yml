@@ -3,7 +3,7 @@ language: objective-c
 env:
   global:
     - FREEBASE_API_KEY=AIzaSyBTcOKmU7L7gFB4AdyAz75JRmdHixdLYjY
-    - MONO_VERSION=3.4.0
+    - MONO_VERSION=3.6.0
     - FSHARP_VERSION=3.1.1.21
 
 install:
